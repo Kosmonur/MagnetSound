@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F22448A82BA5ED9200167704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22448A72BA5ED9200167704 /* AppDelegate.swift */; };
-		F22448AA2BA5ED9200167704 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22448A92BA5ED9200167704 /* SceneDelegate.swift */; };
 		F22448AC2BA5ED9200167704 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22448AB2BA5ED9200167704 /* ViewController.swift */; };
-		F22448AF2BA5ED9200167704 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F22448AE2BA5ED9200167704 /* Base */; };
 		F22448B12BA5ED9300167704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22448B02BA5ED9300167704 /* Assets.xcassets */; };
 		F22448B42BA5ED9300167704 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F22448B32BA5ED9300167704 /* Base */; };
+		F2E4D28C2BA605B1003FC992 /* ToneOutputUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E4D28B2BA605B1003FC992 /* ToneOutputUnit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F22448A42BA5ED9200167704 /* MagnetSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagnetSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22448A72BA5ED9200167704 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F22448A92BA5ED9200167704 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F22448AB2BA5ED9200167704 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F22448AE2BA5ED9200167704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F22448B02BA5ED9300167704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F22448B32BA5ED9300167704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F22448B52BA5ED9300167704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2E4D28B2BA605B1003FC992 /* ToneOutputUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneOutputUnit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				F22448A72BA5ED9200167704 /* AppDelegate.swift */,
-				F22448A92BA5ED9200167704 /* SceneDelegate.swift */,
 				F22448AB2BA5ED9200167704 /* ViewController.swift */,
-				F22448AD2BA5ED9200167704 /* Main.storyboard */,
+				F2E4D28B2BA605B1003FC992 /* ToneOutputUnit.swift */,
 				F22448B02BA5ED9300167704 /* Assets.xcassets */,
 				F22448B22BA5ED9300167704 /* LaunchScreen.storyboard */,
 				F22448B52BA5ED9300167704 /* Info.plist */,
@@ -127,7 +124,6 @@
 			files = (
 				F22448B12BA5ED9300167704 /* Assets.xcassets in Resources */,
 				F22448B42BA5ED9300167704 /* Base in Resources */,
-				F22448AF2BA5ED9200167704 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +134,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E4D28C2BA605B1003FC992 /* ToneOutputUnit.swift in Sources */,
 				F22448AC2BA5ED9200167704 /* ViewController.swift in Sources */,
 				F22448A82BA5ED9200167704 /* AppDelegate.swift in Sources */,
-				F22448AA2BA5ED9200167704 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F22448AD2BA5ED9200167704 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F22448AE2BA5ED9200167704 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F22448B22BA5ED9300167704 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +285,10 @@
 				INFOPLIST_FILE = MagnetSound/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +296,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.kosmonur.MagnetSound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,9 +318,10 @@
 				INFOPLIST_FILE = MagnetSound/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +329,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.kosmonur.MagnetSound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
